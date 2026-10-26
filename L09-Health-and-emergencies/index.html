@@ -753,6 +753,7 @@ mark.vb{background:#FFE48A;color:#1C2B3A;padding:0 5px;border-radius:5px;font-we
 .fixed-two-col,.match-wrap,.form-grid,.review-grid,.anno-row,.tl-wrap,.ms-grid,.ms-chips,.two-up{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 .fixed-three-col{grid-template-columns:repeat(3,minmax(0,1fr)) !important}
 .fixed-two-col>*,.match-wrap>*,.form-grid>*,.two-up>*{min-width:0;overflow-wrap:anywhere}
+.vcard .rv-q ~ .vc-hint{display:none !important}.rv-tag{display:inline-block;background:#EDE7F6;color:#2B1B5E;font-weight:800;font-size:.72rem;letter-spacing:.04em;padding:2px 10px;border-radius:999px}.vgrid .vc-name.rv-q{font-size:1.12rem !important;line-height:1.3;font-family:inherit;font-weight:700}
 .vgrid.two{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
 [style*="margin-left:34px"]{display:flex !important;flex-wrap:wrap;gap:8px;align-items:center;margin-top:6px}
 [style*="margin-left:34px"] .circ-opt{margin:0 !important}
@@ -824,6 +825,15 @@ mark.vb{background:#FFE48A;color:#1C2B3A;padding:0 5px;border-radius:5px;font-we
       <button onclick="goToId('hw-cover')" style="cursor:pointer;font-family:inherit;font-size:.95rem;">📝 Homework</button>
     </div>
   </div>
+</div>
+
+<div class="slide" id="s-rv0">
+  <div class="banner banner-review">⭐ Lesson Review</div>
+  <div class="slide-main"><div class="content">
+    <h2>Quick review: say it out loud!</h2>
+    <p class="instruction">Answer each question out loud, like in a real situation.<br>Then click the card to check a model answer.</p>
+    <div class="vgrid two tight"><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 8 · Sightseeing</span></div><div class="vc-name rv-q">You are at the ticket office. Buy two tickets for ten o'clock.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Two tickets for the ten o'clock tour, please.</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 8 · Sightseeing</span></div><div class="vc-name rv-q">You want to know if there is a discount. Ask.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Is there a discount for students?</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 8 · Sightseeing</span></div><div class="vc-name rv-q">You want to know when it closes. Ask.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">What time does the museum close?</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 8 · Sightseeing</span></div><div class="vc-name rv-q">You want a tour in English. Ask.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Is there a guided tour in English?</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 8 · Sightseeing</span></div><div class="vc-name rv-q">You want to take photos. Ask.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Can we take photos inside?</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 7 · Shopping</span></div><div class="vc-name rv-q">You want to know if there is a fee. Ask.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Is there a fee for withdrawing cash?</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 6 · Delays</span></div><div class="vc-name rv-q">Your luggage did not arrive. What do you say?</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">My luggage didn't arrive.</div></div><div class="vcard flip" tabindex="0" role="button" onclick="this.classList.toggle('open')" onkeydown="if(event.key==='Enter'||event.key===' '){this.classList.toggle('open');event.preventDefault();}"><div class="vc-top"><span class="rv-tag">Lesson 4 · Directions</span></div><div class="vc-name rv-q">Ask how to get to the museum.</div><div class="vc-hint">Answer out loud. Then click to see a model answer.</div><div class="vc-def">Excuse me, how do I get to the museum?</div></div></div>
+  </div></div>
 </div>
 
 <div class="slide" id="s-lead">
@@ -1333,8 +1343,8 @@ Start now. Your first question: You wake up in a hotel abroad with a high fever.
 
 <script>
 /* ===================== SLIDE NAV DATA ===================== */
-var slideIds = ["s1", "s-lead", "s-lead2", "s-v1", "s-v1q", "s-v1p", "s-v2", "s-v2q", "s-v2p", "s-sp1", "s-ph1", "s-ph1p", "s-dlg", "s-ph2", "s-ph2p", "s-m1", "s-l1", "s-g1", "s-cb1", "s-err", "s-sp2", "s-rd0", "s-rd1", "s-rd3", "s-rd2", "s-rd4", "s-sp3", "s-free", "s-sp4", "s-ms", "s-task", "s-review", "hw-cover", "hw-L", "hw-1", "hw-2", "hw-3", "hw-4", "hw-ai"];
-var slideLabels = ["Cover", "Warm-Up – Safety snapshot", "Warm-Up – Would You Rather?", "Vocabulary – Health words", "Practice – Check the Meaning", "Practice – Complete the Sentences", "Vocabulary – Emergency words", "Practice – Check the Meaning", "Practice – Complete the Sentences", "Speaking Game – Roll the Dice", "Key Phrases – At the pharmacy and the doctor", "Practice – At the pharmacy and the doctor", "Reading – At the pharmacy", "Key Phrases – Reporting an emergency", "Practice – Reporting an emergency", "Language – Problems and Advice", "Practice – Problems and Advice", "Language – Form", "Practice – Problems and Advice", "Practice – Find the Mistake", "Speaking Game – Spin the Wheel", "Reading – Before You Read", "Reading – What to do if you get sick while traveling", "Reading – Understanding the Article", "Reading – True, False, Not Given", "Reading – Words in Context", "Speaking Game – Bingo", "Speaking – At the clinic", "Speaking Game – Pick a Card", "Speaking – Mission: Travel disaster", "Speaking – My emergency plan", "Lesson Summary", "Homework Cover", "HW – Reading", "HW – Fill in the Gaps", "HW – Word Order", "HW – Choose the Correct Words", "HW – What Do You Say?", "HW – Practice with AI"];
+var slideIds = ["s1", "s-rv0", "s-lead", "s-lead2", "s-v1", "s-v1q", "s-v1p", "s-v2", "s-v2q", "s-v2p", "s-sp1", "s-ph1", "s-ph1p", "s-dlg", "s-ph2", "s-ph2p", "s-m1", "s-l1", "s-g1", "s-cb1", "s-err", "s-sp2", "s-rd0", "s-rd1", "s-rd3", "s-rd2", "s-rd4", "s-sp3", "s-free", "s-sp4", "s-ms", "s-task", "s-review", "hw-cover", "hw-L", "hw-1", "hw-2", "hw-3", "hw-4", "hw-ai"];
+var slideLabels = ["Cover", "Review – Quick-Fire Questions", "Warm-Up – Safety snapshot", "Warm-Up – Would You Rather?", "Vocabulary – Health words", "Practice – Check the Meaning", "Practice – Complete the Sentences", "Vocabulary – Emergency words", "Practice – Check the Meaning", "Practice – Complete the Sentences", "Speaking Game – Roll the Dice", "Key Phrases – At the pharmacy and the doctor", "Practice – At the pharmacy and the doctor", "Reading – At the pharmacy", "Key Phrases – Reporting an emergency", "Practice – Reporting an emergency", "Language – Problems and Advice", "Practice – Problems and Advice", "Language – Form", "Practice – Problems and Advice", "Practice – Find the Mistake", "Speaking Game – Spin the Wheel", "Reading – Before You Read", "Reading – What to do if you get sick while traveling", "Reading – Understanding the Article", "Reading – True, False, Not Given", "Reading – Words in Context", "Speaking Game – Bingo", "Speaking – At the clinic", "Speaking Game – Pick a Card", "Speaking – Mission: Travel disaster", "Speaking – My emergency plan", "Lesson Summary", "Homework Cover", "HW – Reading", "HW – Fill in the Gaps", "HW – Word Order", "HW – Choose the Correct Words", "HW – What Do You Say?", "HW – Practice with AI"];
 var slides = Array.from(document.querySelectorAll('.slide'));
 var current = 0;
 var notesStoreKey = 'efeTravel::L09-Health-and-emergencies::' + document.title;
@@ -1502,9 +1512,6 @@ function savePDF(){
     '[style*="background-color"]{color:#1a1a1a!important}'+
     '.card-body,.card-body *{color:#1a1a1a!important}'+
     '*{print-color-adjust:exact;-webkit-print-color-adjust:exact}'+
-    '.hero{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;border-radius:0 0 16px 16px}'+
-    '.hero:after{display:none}.hero .kicker{font-size:.62rem;margin:0 0 2px}.hero h1{font-size:1.4rem;margin:0;line-height:1.15}.hero .sub{font-size:.82rem;margin:3px 0 0;opacity:.9}'+
-    '.hero .bigbtn.lesson{background:#FFD84D;color:#2B1B5E!important;border:2px solid #fff;box-shadow:none;font-size:.9rem;padding:8px 16px;white-space:nowrap}.notes-title{margin-top:16px}'+
     '@media print{@page{margin:1.5cm}body{padding:0}button{display:none}}'+
   '</style></head><body>'+
   '<div class="header"><h1>English for Traveling · Lesson 9 · Health and emergencies</h1><div class="lesson-link">📝 Here you can see our Notes from Class.</div><div class="lesson-link" style="margin-top:4px;">You can also access <a href="https://teacher-nanda.github.io/AEF-Courses/AEF4-4B/index.html" target="_blank">this link</a> to review the lesson material and do your optional Homework activities.</div></div>'+
@@ -1851,15 +1858,19 @@ function savePDF(){
     '[style*="background-color"]{color:#1a1a1a!important}'+
     '.card-body,.card-body *{color:#1a1a1a!important}'+
     '*{print-color-adjust:exact;-webkit-print-color-adjust:exact}'+
+        '.hero{display:block;background:#2B1B5E;padding:14px 24px 16px;border-radius:0 0 16px 16px;overflow:visible}.hero:after{display:none}'+
+    '.hero .kicker{font-size:.75rem;margin:0 0 3px}.hero h1{font-family:Georgia,serif;font-size:1.85rem;margin:0 0 3px;line-height:1.15}.hero .dt{margin:0 0 9px;font-size:.98rem;color:#FFD84D;font-weight:700}'+
+    '.hero .row{display:flex;align-items:center;justify-content:space-between;gap:18px}.hero .row p{margin:0;font-size:1.02rem;line-height:1.45}'+
+    '.hero .bigbtn.lesson{flex:none;background:#FFD84D;color:#2B1B5E!important;border:0;box-shadow:none;font-size:1.02rem;padding:9px 18px;white-space:nowrap}.notes-title{margin-top:16px}'+
     '@media print{@page{margin:1.2cm}body{padding:0}.hero,.how{break-inside:avoid}}';
   var today = new Date().toLocaleDateString('en-US',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
   var html = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Notes – '+document.title+'</title>'+
     '<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;700;800&display=swap" rel="stylesheet">'+
     '<style>'+css+'</style></head><body>'+
-    '<div class="hero"><div><p class="kicker">Conversational English with teacher Nanda</p>'+
-    '<h1>'+document.title.replace(' — ',' · ')+'</h1>'+
-    '<p class="sub">📝 Your notes from class · '+today+'</p></div>'+
-    '<a class="bigbtn lesson" href="'+LESSON+'" target="_blank">▶ Open the lesson</a></div><!--hero-compact-->'+
+    '<div class="hero"><p class="kicker">Conversational English with teacher Nanda</p>'+
+    '<h1>'+document.title.replace(/^Lesson \d+\s*[—\-]\s*/,'')+'</h1><p class="dt">📅 '+today+'</p>'+
+    '<div class="row"><p>Below are the notes from our class. Click the button to open the lesson material and the homework.</p>'+
+    '<a class="bigbtn lesson" href="'+LESSON+'" target="_blank">▶ Open the lesson</a></div></div><!--hero-v3-->'+
     '<h2 class="notes-title">📝 Notes from class</h2>'+cards+'</body></html>';
   win.document.write(html);
   win.document.close();
